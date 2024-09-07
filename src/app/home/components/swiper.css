@@ -1,0 +1,11 @@
+.swiper-button-next, .swiper-button-prev {
+    color: black; /* Change the color of the icons */
+   font-size: 200px;
+    font-weight: 900;
+  
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+    top: 12%; 
+    /* transform: translateY(-50%); */
+  }
