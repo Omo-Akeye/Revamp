@@ -43,7 +43,7 @@ export default function Hero() {
     <>
       <img src='images/Group 30.svg' alt="group1" className="absolute lg:left-[10%] md:left-[5%] md:top-[50%] top-[30%] max-md:w-11" />
       <img src='/images/Group 31.svg' alt="group2" className="absolute right-[10%] top-[15%] max-md:w-11" />
-      <div className="text-center xl:w-[55%] m-auto lg:w-[70%] max-md:mt-24 md:w-[88%] ">
+      <div className="text-center xl:w-[55%] m-auto lg:w-[70%] max-md:mt-24 w-[85%]">
         <h1 className="font-bold md:text-[64px] text-[28px] md:leading-[80px] text-center">
           Know your business output{" "}
           <span className="text-bime-blue inline-block  text-left">
