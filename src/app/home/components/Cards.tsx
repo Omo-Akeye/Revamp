@@ -51,11 +51,11 @@ export default function Cards() {
   };
 
   return (
-    <div className='flex max-md:flex-col justify-between w-[80%] mx-auto gap-x-7 mt-20 max-md:gap-y-7'>
+    <div className='flex max-lg:flex-col lg:justify-between xl:w-[80%] w-[90%] mx-auto gap-x-7 mt-20 max-lg:gap-y-7 max-lg:items-center'>
       {cards.map((card, index) => (
         <div
           key={index}
-          className='bg-[#F7F7F7] md:rounded-[20px] rounded-2xl md:px-10 px-3 py-5 text-center transition-transform duration-300 ease-in-out transform hover:scale-105 cursor-pointer'
+          className='bg-[#F7F7F7] md:rounded-[20px] rounded-2xl md:px-10 px-3 py-5 text-center transition-transform duration-300 ease-in-out transform hover:scale-105 cursor-pointer max-w-[367px]'
           onMouseEnter={() => handleMouseEnter(index)}
           onMouseLeave={handleMouseLeave}
         >
@@ -65,7 +65,7 @@ export default function Cards() {
             className='transition-opacity duration-300 ease-in-out max-md:w-52 mx-auto'
           />
           <h1 className='text-2xl font-medium md:my-6 my-4'>{card.heading}</h1>
-          <p className='text-sm'>{card.description}</p>
+          <p className=''>{card.description}</p>
         </div>
       ))}
     </div>

@@ -41,7 +41,7 @@ export default function ImageSlider() {
             <p className="mb-8 mt-4 md:text-xl">
               {slide.description}
             </p>
-            <button className="md:px-10 px-[28px] py-[10px] text-white rounded-[10px] bg-[#329ACF] transition">
+            <button className="md:px-10 px-[28px] py-[10px] text-white rounded-[10px] bg-[#329ACF] transition hover:bg-[#38BCFF]">
               {slide.buttonText}
             </button>
             <img src={slide.imgSrc} alt={`Slide ${index + 1}`} />

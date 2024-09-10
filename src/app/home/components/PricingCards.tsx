@@ -27,7 +27,7 @@ export const PricingCard: React.FC<PricingCardProps> = ({
 }) => {
   return (
     <div
-      className="flex flex-col justify-between max-w-[400px] w-full bg-white rounded-[20px] flex-grow"
+      className="flex flex-col justify-between max-w-[380px] w-full bg-white rounded-[20px] flex-grow"
       style={{ backgroundColor: bgColor }}
     >
       <h2
@@ -43,8 +43,8 @@ export const PricingCard: React.FC<PricingCardProps> = ({
         </p>
         <p className="text-center text-gray-700">{features}</p>
         <button
-          className="block px-[27px] py-2 text-white rounded-[10px] hover:opacity-90 md:mt-16 mt-9"
-          style={{ backgroundColor: buttonColor, }}
+          className="block px-[27px] py-2 text-white rounded-[10px] hover:opacity-90 md:mt-16 mt-9" 
+          style={{ backgroundColor: buttonColor }}
         >
           {buttonText}
         </button>
@@ -58,7 +58,7 @@ export const PricingCard: React.FC<PricingCardProps> = ({
 
 const PricingCards: React.FC = () => {
   return (
-    <div className="flex max-md:flex-col justify-center md:w-[90%] w-[80%] mx-auto gap-x-7 max-md:gap-5">
+    <div className="flex max-lg:flex-col justify-center md:w-[90%] w-[80%] mx-auto gap-x-7 max-lg:gap-5 max-lg:items-center">
       <PricingCard
         title="Free"
         price="FREE"

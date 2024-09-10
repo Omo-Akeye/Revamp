@@ -9,7 +9,7 @@ export default function GoodBye() {
              
          <h1 className='md:text-5xl text-2xl font-semibold text-white'>Say goodbye to messy business</h1>
             <p className='md:text-xl text-white my-9 md:w-[50%] mx-auto'>Bime features are built to assist you in managing your business efficiently.</p>
-            <button className="px-10 py-[10px] text-white rounded-[10px] bg-[#329ACF] transition">
+            <button className="px-10 py-[10px] text-white rounded-[10px] bg-[#329ACF] transition hover:bg-[#38BCFF]">
              Get started
          </button>
          </div>
