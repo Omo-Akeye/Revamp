@@ -1,8 +1,18 @@
 import type { Metadata } from "next";
-
+import localFont from 'next/font/local';
 import "./globals.css";
 
 
+const rage = localFont({
+  src: [
+    {
+      path: '../../public/font/Rage Italic.ttf',
+      weight: '400',
+      style: 'italic',
+    },
+  ],
+  variable: '--font-rage', 
+});
 
 export const metadata: Metadata = {
   title: "Bime",
@@ -11,12 +21,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body >{children}</body>
+    <html lang="en" className={rage.variable}>
+      <body>{children}</body>
     </html>
   );
 }

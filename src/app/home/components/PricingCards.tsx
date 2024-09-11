@@ -10,7 +10,8 @@ interface PricingCardProps {
   bgColor: string;
   buttonColor: string;
   limit?: string;
-  terms:string
+  terms:string;
+  textcolor:string
 }
 
 export const PricingCard: React.FC<PricingCardProps> = ({
@@ -23,12 +24,12 @@ export const PricingCard: React.FC<PricingCardProps> = ({
   bgColor,
   buttonColor,
   limit,
-  terms
+  terms,textcolor
 }) => {
   return (
     <div
       className="flex flex-col justify-between max-w-[380px] w-full bg-white rounded-[20px] flex-grow"
-      style={{ backgroundColor: bgColor }}
+      style={{ backgroundColor: bgColor, color: textcolor }}
     >
       <h2
         className="w-full py-10 text-xl text-center border-b-8"
@@ -36,7 +37,7 @@ export const PricingCard: React.FC<PricingCardProps> = ({
       >
         Bime <span className="font-semibold">{title}</span>
       </h2>
-      <section className="flex flex-col justify-between pt-8 pb-8 md:px-[72px] px-[55px] flex-grow">
+      <section className="flex flex-col justify-between pt-8 pb-8 md:px-[72px] px-[55px] flex-grow" >
         <p className="md:mb-[60px] mb-[40px] text-sm text-center font-medium">{description}</p>
         <p className="flex flex-col mb-5 md:text-5xl text-4xl font-medium text-center">
           {price} <span className="font-light uppercase">{limit}</span>
@@ -69,12 +70,14 @@ const PricingCards: React.FC = () => {
         bgColor="#F1FAFF"
         buttonColor="#00AFEF"
         terms='Terms and conditions apply'
+        textcolor='#006CA2'
        
         
       />
       <PricingCard
         title="Regular"
         price="#1000.00"
+        textcolor='#960030'
         description="You have access to all bime features and can create 20+ salesman and vendors"
         features="Total monthly deposits"
         buttonText="Get started"
@@ -86,6 +89,7 @@ const PricingCards: React.FC = () => {
       <PricingCard
         title="Premium"
         price="#2500.00"
+        textcolor='#006C54'
         limit="Unlimited"
         description="New features like QR Code generation for goods automating sales process"
         features="Total monthly deposits"

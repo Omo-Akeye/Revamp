@@ -10,3 +10,38 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.font-rage {
+  font-family: var(--font-rage);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.reviews-container {
+  display: flex;
+  overflow: hidden;
+
+}
+
+.reviews-scroll {
+  display: flex;
+  
+  animation: scroll 40s linear infinite;
+}
+
+.review {
+ max-width: 611px;
+  flex-shrink: 0;
+
+} 
+
+.bime-black {
+  color:  #282829;
+  opacity: 0.8;
+}
