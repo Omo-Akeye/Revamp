@@ -6,7 +6,7 @@ export default function Growth() {
       imgAlt: "growth",
       description: "Track your growth using Bime automated analytics chart that monitors your business",
       linkText: "Learn More",
-      linkImgSrc: "/images/Arrow Right.png",
+      linkImgSrc: "/images/arrow_forward.png",
       linkImgAlt: "arrow",
     },
     {
@@ -15,13 +15,13 @@ export default function Growth() {
       imgAlt: "man+laptop",
       description: "Bime got you covered, you can add salesman to who can record sales and you view the total income",
       linkText: "Learn More",
-      linkImgSrc: "/images/Arrow Right.png",
+      linkImgSrc: "/images/arrow_forward.png",
       linkImgAlt: "arrow",
     },
   ];
 
   return (
-    <main className="w-[85%] mx-auto max-lg:flex max-lg:flex-col max-lg:items-center">
+    <main className="w-[85%] mx-auto max-lg:flex max-lg:flex-col max-lg:items-center max-w-[1228px]">
       {sections.map((section, index) => (
         <div
           key={index}
@@ -35,11 +35,11 @@ export default function Growth() {
             alt={section.imgAlt}
             className="max-md:max-w-[234px] mx-[76px]"
           />
-          <div>
+          <div className="flex flex-col items-start">
             <p className="md:text-xl">{section.description}</p>
-            <div className="flex text-[#329ACF] font-semibold gap-x-[10px] mt-6">
+            <div className="flex text-[#329ACF] font-semibold gap-x-[10px] mt-6 justify-center items-center hover:gap-x-4 cursor-pointer transition">
               <p>{section.linkText}</p>
-              <img src={section.linkImgSrc} alt={section.linkImgAlt} />
+              <img src={section.linkImgSrc} alt={section.linkImgAlt} width={18} />
             </div>
           </div>
         </div>

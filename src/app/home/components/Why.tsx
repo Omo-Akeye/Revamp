@@ -5,7 +5,7 @@ export default function Why() {
   return (
     <div className='md:mt-24 mt-14'>
        
-       <div className='w-[60%] mx-auto text-center mb-24'>
+       <div className='w-[40%] mx-auto text-center mb-24'>
          
        <p className='text-[#0E0F0F99] text-opacity-60 uppercase max-md:text-xs text-xl mb-3'>WHO SAID DATA MUST BE MESSY?</p>
         <p className='md:text-2xl font-semibold text-sm max-md:mt-[6px]'>As your business starts to grow you need a system that can help in accelerating its growth</p>

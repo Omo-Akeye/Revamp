@@ -1,6 +1,5 @@
 "use client";
 
-import { li } from 'framer-motion/client';
 import { useState, useEffect } from 'react';
 
 const cards = [
@@ -20,10 +19,10 @@ const cards = [
     src: '/images/shopping-store-4809880-3997871 1.png',
     hoverSrc: '/images/shopping-store.png',
     description: [
-      ' Record your transaction flows',
- 'Generate receipts for swift  payments',
- 'Access and track updated',
-    '  inventory in real time'
+ 'Record sales transactions',
+ 'Track inventory',
+    'Issue receipts to clients',
+    'Update daily transaction flows'
      ],
   },
   {
@@ -31,10 +30,9 @@ const cards = [
     src: '/images/office-building-5560711-4632487 1.png',
     hoverSrc: '/images/office-buildin.png',
     description:   [
-      ' Record your transaction flows',
- 'Generate receipts for swift  payments',
- 'Access and track updated',
-    '  inventory in real time'
+      'Allows you effectively and easily track company’s finances',
+ 'Helps you make decisions',
+ 'using clean and accurate data'
      ]
   },
 ];
@@ -67,7 +65,7 @@ export default function Cards() {
   };
 
   return (
-    <div className='flex max-lg:flex-col lg:justify-between xl:w-[80%] w-[80%] mx-auto gap-x-7 mt-20 max-lg:gap-y-7 max-lg:items-center'>
+    <div className='flex max-lg:flex-col lg:justify-center xl:w-[80%] w-[80%] mx-auto gap-x-7 mt-20 max-lg:gap-y-7'>
       {cards.map((card, index) => (
         <div
           key={index}

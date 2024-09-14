@@ -9,7 +9,6 @@ import './swiper.css';
 
 import { Navigation } from 'swiper/modules';
 
-// Data array for the slides
 const slidesData = [
   {
     title: 'Profit and Loss Accumulation',
@@ -23,7 +22,6 @@ const slidesData = [
     buttonText: 'Get started',
     imgSrc: '/images/estimated-profit-10823830-8689199 1.png',
   },
-  // Add more slides here if needed
 ];
 
 export default function ImageSlider() {

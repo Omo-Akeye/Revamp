@@ -18,7 +18,11 @@ export default function GoodBye() {
 
     <footer className='w-full px-24 py-20 bg-black -mt-11 flex justify-between max-md:flex-col'>
         <h1 className='text-6xl font-bold text-[#D9D9D9]'>Bime</h1>
+        <div className="flex gap-x-2 items-center">
+          <img src="/images/indicator.png" alt="indicator" className="w-6 h-6"/>
         <h2 className="text-white font-medium text-xl">All services are operational</h2>
+        </div>
+       
     </footer>
     </>
    

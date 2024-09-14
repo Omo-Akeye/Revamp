@@ -42,14 +42,16 @@ export const PricingCard: React.FC<PricingCardProps> = ({
         <p className="flex flex-col mb-5 md:text-5xl text-4xl font-medium text-center">
           {price} <span className="font-light uppercase">{limit}</span>
         </p>
-        <p className="text-center text-gray-700">{features}</p>
-        <button
-          className="block px-[27px] py-2 text-white rounded-[10px] hover:opacity-90 md:mt-16 mt-9" 
+        <p className="text-center ">{features}</p>
+       <div className='md:mt-16 mt-9 flex justify-center font-semibold'>
+       <button
+          className=" px-10 py-[11px] text-white rounded-[10px] hover:opacity-90 " 
           style={{ backgroundColor: buttonColor }}
         >
           {buttonText}
         </button>
-        <p className="mt-2 text-sm text-center text-gray-500">
+       </div>
+        <p className="mt-2 text-sm text-center ">
           {terms}
         </p>
       </section>
@@ -68,7 +70,7 @@ const PricingCards: React.FC = () => {
         buttonText="Start free trial"
         borderColor="#38BCFF"
         bgColor="#F1FAFF"
-        buttonColor="#00AFEF"
+        buttonColor="#0899CE"
         terms='Terms and conditions apply'
         textcolor='#006CA2'
        
@@ -83,7 +85,7 @@ const PricingCards: React.FC = () => {
         buttonText="Get started"
         borderColor="#FA6292"
         bgColor="#FFF4F7"
-        buttonColor="#FA6292"
+        buttonColor="#CE2C60"
         terms='Our pricing adjusts with your monthly transactions'
       />
       <PricingCard
@@ -96,7 +98,7 @@ const PricingCards: React.FC = () => {
         buttonText="Get started"
         borderColor="#0DDFB0"
         bgColor="#F2FFFC"
-        buttonColor="#0DDFB0"
+        buttonColor="#0AB18C"
         terms='Our pricing adjusts with your monthly transactions'
       />
     </div>
