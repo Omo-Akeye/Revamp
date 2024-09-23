@@ -65,11 +65,11 @@ export default function Cards() {
   };
 
   return (
-    <div className='flex max-lg:flex-col lg:justify-center xl:w-[80%] w-[80%] mx-auto gap-x-7 mt-20 max-lg:gap-y-7'>
+    <div className='flex max-lg:flex-col lg:justify-center xl:w-[80%] w-[80%] mx-auto gap-x-7 mt-20 max-lg:gap-y-7 max-lg:items-center'>
       {cards.map((card, index) => (
         <div
           key={index}
-          className='bg-[#F7F7F7] md:rounded-[20px] rounded-2xl md:px-[31px] px-3 py-12  transition-transform duration-300 ease-in-out transform hover:scale-105 cursor-pointer max-w-[367px]'
+          className='bg-[#F7F7F7] md:rounded-[20px] rounded-2xl md:px-[31px] px-[18px] py-12  transition-transform duration-300 ease-in-out transform hover:scale-105 cursor-pointer max-w-[367px] w-full'
           onMouseEnter={() => handleMouseEnter(index)}
           onMouseLeave={handleMouseLeave}
         >
@@ -77,9 +77,9 @@ export default function Cards() {
           <img
             src={isSmallScreen ? card.hoverSrc : (hoveredIndex === index ? card.hoverSrc : card.src)}
             alt={card.heading}
-            className='transition-opacity duration-300 ease-in-out max-md:w-52 mx-auto'
+            className='transition-opacity duration-300 ease-in-out max-md:w-52 mx-auto max-w-[220px]'
           />
-           <ul className='text-lg list-disc list-inside'>
+           <ul className='md:text-lg text-sm list-disc list-inside'>
             {card.description.map((des,index)=> (
               <li key={index} className=''>
                 {des}

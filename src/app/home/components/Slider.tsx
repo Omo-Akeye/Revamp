@@ -1,5 +1,4 @@
 "use client";
-
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -8,6 +7,7 @@ import 'swiper/css/pagination';
 import './swiper.css';
 
 import { Navigation } from 'swiper/modules';
+import Button from './Button';
 
 const slidesData = [
   {
@@ -39,9 +39,15 @@ export default function ImageSlider() {
             <p className="mb-8 mt-4 md:text-xl">
               {slide.description}
             </p>
-            <button className="md:px-10 px-[28px] py-[10px] text-white rounded-[10px] bg-[#329ACF] transition hover:bg-[#38BCFF]">
-              {slide.buttonText}
-            </button>
+            <Button
+            label={slide.buttonText}
+            width="auto"
+            height="auto"
+            bgColor="#329ACF"
+            hoverBgColor="#38BCFF" 
+            textColor="white"         
+        />
+           
             <img src={slide.imgSrc} alt={`Slide ${index + 1}`} />
           </div>
         </SwiperSlide>

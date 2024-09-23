@@ -34,9 +34,16 @@ body {
   
   animation: scroll 40s linear infinite;
 }
+@media (max-width: 800px) {
+  .reviews-scroll {
+  
+    
+    animation: scroll 90s linear infinite;
+  }
+}
 
 .review {
- max-width: 611px;
+ 
   flex-shrink: 0;
 
 } 
@@ -44,4 +51,10 @@ body {
 .bime-black {
   color:  #282829;
   opacity: 0.8;
+}
+
+.footer-bg {
+  background-image: url('/images/blurred-splashes.png');
+  background-position: center;
+  background-size: cover;
 }

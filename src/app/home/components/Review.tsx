@@ -40,24 +40,30 @@ const reviews1 =  [
 export default function Review() {
     return (
       <div className='reviews-container'>
-        <div className='reviews-scroll gap-x-11'>
+        <div className='reviews-scroll md:gap-x-11 gap-x-6'>
           {reviews.map((review, index) => (
-            <div key={index} className='review max-w-[611px] text-xl font-medium px-[48px] bg-[#F0F0F0] pb-[61px] pt-[81px] rounded-[20px]'>
+            <div key={index} className='review md:max-w-[611px] max-md:w-80 flex-shrink-0 md:text-xl text-xs font-medium md:px-[48px] px-7 bg-[#F0F0F0] pb-[61px] md:pt-[81px] pt-12 rounded-[20px]'>
               <p>{review.reviewText}</p>
-              <img src={review.vectorSrc} alt='vector' className='mt-[186px]' />
+              <img src={review.vectorSrc} alt='vector' className='md:mt-[186px] mt-[105px]' />
             </div>
           ))}
           
           {reviews1.map((review, index) => (
-            <div key={index} className='review max-w-[611px] text-xl font-medium px-[48px] bg-[#F0F0F0] pb-[61px] pt-[81px] rounded-[20px]'>
+            <div key={index} className='review md:max-w-[611px] max-md:w-80 md:text-xl text-xs font-medium md:px-[48px] px-7 bg-[#F0F0F0] pb-[61px] md:pt-[81px] pt-12 rounded-[20px]'>
               <p>{review.reviewText}</p>
-              <img src={review.vectorSrc} alt='vector' className='mt-[186px]' />
+              <img src={review.vectorSrc} alt='vector'  className='md:mt-[186px] mt-[105px]' />
             </div>
           ))}
             {reviews1.map((review, index) => (
-            <div key={`dup-${index}`} className='review max-w-[611px] text-xl font-medium px-[48px] bg-[#F0F0F0] pb-[61px] pt-[81px] rounded-[20px]'>
+            <div key={`dup-${index}`}className='review md:max-w-[611px] max-md:w-80 md:text-xl text-xs font-medium md:px-[48px] px-7 bg-[#F0F0F0] pb-[61px] md:pt-[81px] pt-12 rounded-[20px]'>
               <p>{review.reviewText}</p>
-              <img src={review.vectorSrc} alt='vector' className='mt-[186px]' />
+              <img src={review.vectorSrc} alt='vector'  className='md:mt-[186px] mt-[105px]'/>
+            </div>
+          ))}
+                {reviews1.map((review, index) => (
+            <div key={`dup-${index}`}className='review md:max-w-[611px] max-md:w-80 md:text-xl text-xs font-medium md:px-[48px] px-7 bg-[#F0F0F0] pb-[61px] md:pt-[81px] pt-12 rounded-[20px]'>
+              <p>{review.reviewText}</p>
+              <img src={review.vectorSrc} alt='vector'  className='md:mt-[186px] mt-[105px]'/>
             </div>
           ))}
         </div>
