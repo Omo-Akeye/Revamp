@@ -34,13 +34,13 @@ export default function GoodBye() {
           <section className="flex max-md:flex-col  justify-center gap-x-8 mt-11 max-md:gap-y-2  mx-auto">
             <span className="flex gap-x-[10px] items-center justify-center">
 
-            <img src="/images/vector.svg" alt="vector" />
+            <img src="/images/star.jpg" alt="vector" />
             <p className="md:text-xl font-medium text-xs">4.7 on G2.com</p>
             <img src="/images/footergroup.png" alt="footer" />
             </span>
 
             <span className="flex gap-x-[10px] items-center justify-center">
-            <img src="/images/vector.svg" alt="vector" />
+            <img src="/images/star.jpg" alt="vector" />
             <p className="md:text-xl text-xs font-medium">4.7 on Capterra</p>
             <img src="/images/footergroup1.png" alt="footer" />
             </span>
@@ -56,7 +56,7 @@ export default function GoodBye() {
         Bime
         </h1>
         <div className="flex gap-x-2 items-center">
-          <img src="/images/indicator.png" alt="indicator" className="w-6 h-6" />
+          <img src="/images/indicator.jpg" alt="indicator" className="w-6 h-6" />
           <h2 className="font-medium md:text-xl text-xs">All services are operational</h2>
         </div>
       </footer>
