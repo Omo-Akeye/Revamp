@@ -58,7 +58,7 @@ export const PricingCard: React.FC<PricingCardProps> = ({
             height="auto"
             hoverBgColor={hoverBgColor}
           />
-           <p className="mt-2 text-sm text-center">{terms}</p>
+           <p className="mt-2 text-sm text-center max-sm:text-xs">{terms}</p>
         </div>
        
       </section>

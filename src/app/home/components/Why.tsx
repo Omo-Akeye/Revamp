@@ -18,7 +18,7 @@ export default function Why() {
                     <li>Scaling seem impossible at the absence of accurate data</li>
                     <li>Delay in service delivery to customers</li>
                 </ul>
-                <div className='w-full mt-11 justify-end flex'>
+                <div className='w-full md:mt-28 mt-14 justify-end flex'>
                 <Image src={lonely} alt="img"  />
                 </div>
                
@@ -29,10 +29,10 @@ export default function Why() {
     Your business finances are properly managed and crystal clear, giving you more time to grow and potentially scale your business
   </li>
   
-  <div className="inline-flex max-md:flex-col md:items-end items-start gap-4 mt-5">
+  <div className="inline-flex max-md:flex-col md:items-end items-start mt-5">
     <Image src={growth} alt="growth" />
 
-    <button className="md:px-10 px-6 text-sm font-medium bg-white py-[10px] rounded-[10px] inline-block">
+    <button className="md:px-10 px-6 text-sm font-medium bg-white py-[10px] rounded-[10px] inline-block text-nowrap max-md:mt-6">
       Get started
     </button>
   </div>

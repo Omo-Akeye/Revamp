@@ -25,7 +25,7 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <Link href={href || ''} legacyBehavior>
       <a
-        className={`px-4 py-2 rounded-lg inline-flex items-center transition-colors duration-300`}
+        className={`md:px-[38px] px-[16px] md:py-[18px] py-2 rounded-lg inline-flex items-center transition-colors duration-300 text-nowrap max-sm:text-xs`}
         style={{
           backgroundColor: bgColor,
           color: textColor,
@@ -33,7 +33,7 @@ const Button: React.FC<ButtonProps> = ({
           height,
           border,
         }}
-        // Using Tailwind's hover class dynamically in the style object
+       
         onMouseEnter={(e) => {
           (e.currentTarget as HTMLAnchorElement).style.backgroundColor = hoverBgColor;
         }}

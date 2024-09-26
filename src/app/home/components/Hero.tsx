@@ -6,11 +6,12 @@ export default function Hero() {
 
   return (
     <>
-      <img src='images/Group 30.svg' alt="group1" className="absolute lg:left-[10%] md:left-[5%] md:top-[50%] top-[30%] max-md:w-11" />
-      <img src='/images/Group 31.svg' alt="group2" className="absolute right-[20%] md:top-[15%] top-[20%] max-md:w-11" />
-      <img src="/images/Group 1000002780.png" alt="finance" className="absolute w-[73px] h-[73px] md:right-[15%] right-[7%] md:bottom-[35%] max-md:top-[35%] max-md:w-11 max-md:h-11" />
-      <img src="/images/Group 1000002779.png" alt="finance"  className="absolute w-[52px] h-[52px] left-[25%] top-[20%] max-md:w-11 max-md:h-11 "/>
-      <div className="text-center xl:w-[45%] m-auto lg:w-[70%] max-md:mt-24 w-[80%] ">
+      <img src='images/Group 30.svg' alt="group1" className="absolute lg:left-[10%] left-[5%] md:left-[5%] md:top-[50%] top-[30%] max-md:w-11" />
+      <img src='/images/Group 31.svg' alt="group2" className="absolute right-[20%] md:top-[15%] top-[15%] max-md:w-11" />
+      <img src="/images/Group 1000002780.png" alt="finance" className="absolute w-[73px] h-[73px] md:right-[15%] right-[7%] md:bottom-[35%] max-md:top-[30%] max-md:w-11 max-md:h-11" />
+      <img src="/images/Group 1000002779.png" alt="finance"  className="absolute w-[52px] h-[52px] left-[25%] md:top-[20%] top-[15%] max-md:w-11 max-md:h-11 "/>
+      <div className="text-center xl:w-[45%] m-auto  max-md:mt-24 w-[75%] sm:w-[55%] md:w-[75%]">
+      {/* <div className="text-center xl:w-[45%] m-auto lg:w-[70%] max-md:mt-24 w-[65%] md:w-[75%]"> */}
         <h1 className="font-bold md:text-[64px] text-[28px] md:leading-[80px] text-center">
        <span className="text-bime-blue">
        Automate

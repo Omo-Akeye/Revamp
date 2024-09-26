@@ -1,12 +1,12 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react"; // Import useState for managing the menu state
+import { useState } from "react";
 import Button from "./Button";
 
 export default function Nav() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // State to manage the visibility of the mobile menu
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); 
 
-  // Function to toggle the mobile menu
+
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen((prev) => !prev);
   };
@@ -19,15 +19,15 @@ export default function Nav() {
 
       <div className="flex-1 flex justify-center ml-20">
         <ul className="flex items-center text-lg text-[#282829] gap-x-7 max-lg:hidden">
-          <li className="flex items-center gap-x-[6px]">
+          <li className="flex items-center gap-x-[6px] cursor-pointer">
             Discount offer
             <span className="bg-[#CCEEFF] text-bime-blue px-2 py-1 rounded-md flex text-[10px] font-bold">
               <img src="/images/gift-box-4027302-3328590 2.svg" alt="gift" />
               30% off
             </span>
           </li>
-          <li>Pricing</li>
-          <li>About us</li>
+          <li className="cursor-pointer">Pricing</li>
+          <li className="cursor-pointer">About us</li>
         </ul>
       </div>
 
@@ -57,18 +57,18 @@ export default function Nav() {
         </ul>
       </div>
 
-      {/* Hamburger menu */}
+   
       <div className="lg:hidden cursor-pointer" onClick={toggleMobileMenu}>
         <img src="/images/Hamburger Menu.svg" alt="hamburger menu" />
       </div>
 
-      {/* Mobile Menu (with transition) */}
+      
       <section
         className={`fixed top-0 bg-white shadow-xl w-[50%] h-full right-0 z-40 transform transition-transform duration-300 ${
           isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        {/* Close Button */}
+      
         <span
           className="cursor-pointer text-2xl font-semibold"
           onClick={toggleMobileMenu}

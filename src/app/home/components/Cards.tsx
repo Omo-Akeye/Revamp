@@ -5,8 +5,8 @@ import { useState, useEffect } from 'react';
 const cards = [
   {
     heading: 'For Online Vendors',
-    src: '/images/shopping-app.png',
-    hoverSrc: '/images/shopping-app-6866298-5628343 1.png',
+    src: '/images/frame-card.png',
+    hoverSrc: '/images/frame-card1.png',
     description: [
      ' Record your transaction flows',
 'Generate receipts for swift  payments',
