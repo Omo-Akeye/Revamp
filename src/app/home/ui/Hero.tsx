@@ -21,7 +21,7 @@ export default function Hero() {
         <p className="bime-black md:mt-9 mt-6 mb-14  md:px-[10%] max-md:text-sm text-xl">
         Control full access to reliable, easy-to-use and automated bookkeeping for your business
         </p>
-        <div className="inline-flex justify-center items-center md:gap-x-7 gap-x-3">
+        <div className="inline-flex justify-center items-center md:gap-x-4 gap-x-3">
        <Button
             label="Start free trial"
             width="auto"
