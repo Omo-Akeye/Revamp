@@ -17,7 +17,7 @@ export default function Nav() {
         Bime
       </Link>
 
-      <div className="absolute left-[32%]">
+      <div className="absolute left-[34%]">
         <ul className="flex items-center text-lg text-[#282829] gap-x-7 max-lg:hidden">
           <li className="flex items-center gap-x-[6px] cursor-pointer">
             Discount offer
