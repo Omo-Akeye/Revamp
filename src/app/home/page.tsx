@@ -1,13 +1,13 @@
 import React from 'react'
-import Nav from './components/Nav'
-import Hero from './components/Hero'
-import Business from './components/Business'
-import Cards from './components/Cards'
-import Why from './components/Why'
-import Growth from './components/Growth'
-import Features from './components/Features'
-import PricingCards from './components/PricingCards'
-import GoodBye from './components/GoodBye'
+import Nav from './ui/Nav'
+import Hero from './ui/Hero'
+import Business from './ui/Business'
+import Cards from './ui/Cards'
+import Why from './ui/Why'
+import Growth from './ui/Growth'
+import Features from './ui/Features'
+import PricingCards from './ui/PricingCards'
+import GoodBye from './ui/GoodBye'
 
 export default function MainPage() {
   return (

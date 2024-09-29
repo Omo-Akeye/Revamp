@@ -58,3 +58,12 @@ body {
   background-position: center;
   background-size: cover;
 }
+
+
+
+@media (390px <= width <= 440px )  {
+  .hero1 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+}

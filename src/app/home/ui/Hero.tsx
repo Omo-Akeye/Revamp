@@ -12,7 +12,7 @@ export default function Hero() {
       <img src="/images/Group 1000002779.png" alt="finance"  className="absolute w-[52px] h-[52px] left-[25%] md:top-[20%] top-[15%] max-md:w-11 max-md:h-11 "/>
       <div className="text-center xl:w-[45%] m-auto  max-md:mt-24 w-[75%] sm:w-[55%] md:w-[75%]">
       {/* <div className="text-center xl:w-[45%] m-auto lg:w-[70%] max-md:mt-24 w-[65%] md:w-[75%]"> */}
-        <h1 className="font-bold md:text-[64px] text-[28px] md:leading-[80px] text-center">
+        <h1 className="font-bold md:text-[64px] text-[28px] md:leading-[80px] text-center hero1">
        <span className="text-bime-blue">
        Automate
         </span> Your 
