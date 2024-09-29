@@ -12,12 +12,12 @@ export default function Nav() {
   };
 
   return (
-    <nav className="flex justify-between md:mt-[52px] mt-9 w-[90%] mx-auto items-center">
+    <nav className="flex justify-between md:mt-[52px] mt-9 w-[90%] mx-auto items-center relative">
       <Link href="/" className="text-2xl font-extrabold text-bime-blue">
         Bime
       </Link>
 
-      <div className="flex-1 flex justify-center ml-20">
+      <div className="absolute left-[32%]">
         <ul className="flex items-center text-lg text-[#282829] gap-x-7 max-lg:hidden">
           <li className="flex items-center gap-x-[6px] cursor-pointer">
             Discount offer
