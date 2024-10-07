@@ -8,6 +8,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 .font-rage {
@@ -25,6 +26,7 @@ body {
 
 .reviews-container {
   display: flex;
+
   overflow: hidden;
 
 }

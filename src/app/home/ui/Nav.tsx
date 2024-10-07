@@ -12,12 +12,14 @@ export default function Nav() {
   };
 
   return (
-    <nav className="flex justify-between md:mt-[52px] mt-9 w-[90%] mx-auto items-center relative">
+    <nav className="flex justify-between md:mt-[52px] mt-9 w-[90%] mx-auto items-center">
       <Link href="/" className="text-2xl font-extrabold text-bime-blue">
         Bime
       </Link>
 
-      <div className="absolute left-[34%]">
+      <div className="flex items-center">
+
+      <div className="absolute xl:left-[37%] left-[33%]">
         <ul className="flex items-center text-lg text-[#282829] gap-x-7 max-lg:hidden">
           <li className="flex items-center gap-x-[6px] cursor-pointer">
             Discount offer
@@ -32,30 +34,23 @@ export default function Nav() {
       </div>
 
       <div className="inline-flex gap-x-[120px]">
-        <ul className="inline-flex items-center text-sm font-semibold gap-7 max-lg:hidden">
-          <li className="inline-flex gap-3 font-semibold">
-            <Button
-              label="Log in"
-              href="/login"
-              bgColor="transparent"
-              textColor="#282829"
-              border="0.3px solid #282829"
-              width="auto"
-              height="auto"
-              hoverBgColor="#EAEAEA"
-            />
-            <Button
-              label="Get started"
-              href="/"
-              bgColor="#329ACF"
-              textColor="white"
-              width="auto"
-              height="auto"
-              hoverBgColor="#38BCFF"
-            />
-          </li>
-        </ul>
+        <div className="inline-flex items-center text-sm font-semibold gap-[10px] max-lg:hidden">
+
+             <Link href={'/login'} className="border-[0.3px] text-[#282829] py-3 px-7 rounded-[10px] bime-black">
+             Login
+             </Link>
+             <Link href={'/signup'} className="text-white font-semibold bg-[#329ACF] py-3 px-9 rounded-[10px] hover:bg-[#38BCFF]">
+             Get Started
+             </Link>
+         
+       
+
+        </div>
       </div>
+
+      </div>
+
+    
 
    
       <div className="lg:hidden cursor-pointer" onClick={toggleMobileMenu}>
