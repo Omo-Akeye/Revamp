@@ -69,3 +69,11 @@ body {
     padding-right: 20px;
 }
 }
+
+
+@media (640px <= width <= 768px )  {
+  .hero1 {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+}

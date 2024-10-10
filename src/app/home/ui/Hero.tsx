@@ -9,7 +9,7 @@ export default function Hero() {
       <img src='/images/Group 31.svg' alt="group2" className="absolute right-[20%] md:top-[15%] top-[15%] max-md:w-11" />
       <img src="/images/Group 1000002780.png" alt="finance" className="absolute w-[73px] h-[73px] md:right-[15%] right-[7%] md:bottom-[35%] max-md:top-[30%] max-md:w-11 max-md:h-11" />
       <img src="/images/Group 1000002779.png" alt="finance"  className="absolute w-[52px] h-[52px] left-[25%] md:top-[20%] top-[15%] max-md:w-11 max-md:h-11 "/>
-      <div className="text-center xl:w-[48%] m-auto  max-md:mt-24 w-[75%] sm:w-[55%] md:w-[55%]">
+      <div className="text-center xl:w-[48%] m-auto  max-md:mt-24 w-[75%] sm:w-[50%] lg:w-[55%] md:w-[70%]">
         <h1 className="font-bold md:text-[64px] text-[28px] md:leading-[80px] text-center hero1">
        <span className="text-bime-blue">
        Automate

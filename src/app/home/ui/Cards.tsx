@@ -6,7 +6,7 @@ const cards = [
   {
     heading: 'For Online Vendors',
     src: '/images/frame-card.png',
-    hoverSrc: '/images/frame-card1.png',
+    hoverSrc: '/images/shopping-app-6.png',
     description: [
      ' Record your transaction flows',
 'Generate receipts for swift  payments',
@@ -46,7 +46,7 @@ export default function Cards() {
       setIsSmallScreen(window.innerWidth <= 780);
     };
 
-    handleResize(); // Initialize state based on initial screen size
+    handleResize(); 
     window.addEventListener('resize', handleResize);
 
     return () => {
@@ -65,7 +65,7 @@ export default function Cards() {
   };
 
   return (
-    <div className='flex max-lg:flex-col lg:justify-center xl:w-[80%] w-[80%] mx-auto gap-x-7 mt-20 max-lg:gap-y-7 max-lg:items-center'>
+    <div className='flex max-lg:flex-col lg:justify-center xl:w-[80%] lg:w-[90%] w-[80%] mx-auto gap-x-7 mt-20 max-lg:gap-y-7 max-lg:items-center'>
       {cards.map((card, index) => (
         <div
           key={index}
