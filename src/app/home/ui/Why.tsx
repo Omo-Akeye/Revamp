@@ -11,7 +11,7 @@ export default function Why() {
             <p className='max-md:text-xs text-xl mb-3 font-medium'>Who said data must be messy?</p>
             <p className='md:text-base  text-sm max-md:mt-[6px] '>As your business starts to grow you need a system that can help in accelerating its growth</p>
             </div>
-            <div className='bg-[#F7F7F7] rounded-[20px] pt-[72px] pb-[52px] pl-10'>
+            <div className='bg-[#F7F7F7] rounded-[20px] pt-[92px] pb-[52px] pl-10 h-[60%]'>
             <h1 className='md:text-[32px] text-2xl font-semibold mb-5'>Without Bime</h1>
                 <ul className="md:text-base md:gap-y-3 gap-4 list-inside list-disc">
                     <li>Fraustrating messy data takes forever to get refined</li>

@@ -79,7 +79,7 @@ export default function Cards() {
             alt={card.heading}
             className='transition-opacity duration-300 ease-in-out max-md:w-52 mx-auto max-w-[220px]'
           />
-           <ul className='md:text-lg text-sm list-disc list-inside'>
+           <ul className='md:text-base text-sm list-disc list-inside'>
             {card.description.map((des,index)=> (
               <li key={index} className=''>
                 {des}
