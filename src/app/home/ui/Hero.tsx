@@ -16,7 +16,7 @@ export default function Hero() {
          Your 
         Boring Finances
         </h1>
-        <p className="bime-black md:mt-9 mt-6 mb-14 max-md:text-sm text-2xl mx-[16%]">
+        <p className="bime-black md:mt-9 mt-6 mb-14 max-md:text-sm text-base mx-[30%]">
         Control full access to reliable, easy-to-use and automated bookkeeping for your business
         </p>
         <div className="inline-flex justify-center items-center md:gap-x-4 gap-x-3">
