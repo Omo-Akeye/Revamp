@@ -2,16 +2,16 @@
 
 export default function Why() {
   return (
-    <div className='md:mt-16 mt-14'>
+    <div className='md:mt-10 mt-14'>
       
-        <div className='flex gap-x-10 w-[85%] mx-auto max-lg:gap-y-8 justify-center max-lg:flex-col max-lg:items-center'>
-            <section className="max-w-[569px] w-full flex justify-between flex-col">
+        <div className='flex gap-x-10 w-[90%] mx-auto max-lg:gap-y-8 justify-center max-lg:flex-col max-lg:items-center'>
+            <section className="max-w-[596px] w-full flex justify-between flex-col">
             <div className='py-10 bg-[#F7F7F7] px-8  rounded-[20px] mb-5 relative'>
               <img src="images/idea-3d.png" alt="idea" className="absolute right-[5%] top-[5%]" />
             <p className='max-md:text-xs text-xl mb-3 font-medium'>Who said data must be messy?</p>
             <p className='md:text-base  text-sm max-md:mt-[6px] '>As your business starts to grow you need a system that can help in accelerating its growth</p>
             </div>
-            <div className='bg-[#F7F7F7] rounded-[20px] pt-[92px] pb-[52px] pl-10 h-[60%]'>
+            <div className='bg-[#F7F7F7] rounded-[20px] pt-[130px] pb-[52px] pl-10 h-[62%]'>
             <h1 className='md:text-[32px] text-2xl font-semibold mb-5'>Without Bime</h1>
                 <ul className="md:text-base md:gap-y-3 gap-4 list-inside list-disc">
                     <li>Fraustrating messy data takes forever to get refined</li>
@@ -22,7 +22,7 @@ export default function Why() {
               
                
             </section>
-            <section className="rounded-[20px] max-w-[569px] pt-8 w-full border-[2px] border-[#F5F5F5] px-10 pb-12">
+            <section className="rounded-[20px] max-w-[596px] pt-8 w-full border-[2px] border-[#F5F5F5] px-10 pb-12">
               <img src="images/free-bar.png" alt="bar" />
   <h1 className="text-3xl font-semibold mb-5">With Bime</h1>
   <li className="md:text-base list-inside list-disc">
