@@ -6,17 +6,17 @@ export default function Hero() {
   return (
     <>
       <img src='images/Group 30.svg' alt="group1" className="absolute lg:left-[10%] left-[5%] md:left-[5%] md:top-[50%] top-[30%] max-md:w-11" />
-      <img src='/images/Group 31.svg' alt="group2" className="absolute right-[20%] md:top-[15%] top-[15%] max-md:w-11" />
+      <img src='/images/Group 31.svg' alt="group2" className="absolute right-[15%] md:top-[15%] top-[15%] max-md:w-11" />
       <img src="/images/Group 1000002780.png" alt="finance" className="absolute w-[73px] h-[73px] md:right-[15%] right-[7%] md:bottom-[35%] max-md:top-[30%] max-md:w-11 max-md:h-11" />
-      <img src="/images/Group 1000002779.png" alt="finance"  className="absolute w-[52px] h-[52px] left-[25%] md:top-[20%] top-[15%] max-md:w-11 max-md:h-11 "/>
-      <div className="text-center xl:w-[48%] m-auto  max-md:mt-24 w-[75%] sm:w-[50%] lg:w-[55%] md:w-[70%]">
-        <h1 className="font-bold md:text-[64px] text-[28px] md:leading-[80px] text-center hero1">
-       <span className="text-bime-blue">
+      <img src="/images/Group 1000002779.png" alt="finance"  className="absolute w-[52px] h-[52px] left-[15%] md:top-[15%] top-[15%] max-md:w-11 max-md:h-11 "/>
+      <div className="text-center lg:w-[80%] xl:w-[70%] m-auto  max-md:mt-24 w-[75%] sm:w-[50%] md:w-[80%] ">
+        <h1 className="font-bold lg:text-8xl text-[28px] md:leading-[80px] text-center hero1 md:text-7xl">
+       
        Automate
-        </span> Your 
+         Your 
         Boring Finances
         </h1>
-        <p className="bime-black md:mt-9 mt-6 mb-14 max-md:text-sm text-2xl">
+        <p className="bime-black md:mt-9 mt-6 mb-14 max-md:text-sm text-2xl mx-[16%]">
         Control full access to reliable, easy-to-use and automated bookkeeping for your business
         </p>
         <div className="inline-flex justify-center items-center md:gap-x-4 gap-x-3">

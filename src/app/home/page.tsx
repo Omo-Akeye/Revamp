@@ -11,7 +11,7 @@ import GoodBye from './ui/GoodBye'
 
 export default function MainPage() {
   return (
-    <div className="max-w-[1440px] h-screen mx-auto">
+    <div className="max-w-[1440px] h-screen mx-auto relative">
         <Nav/>
         <div className="md:h-[90vh] md:flex md:justify-center md:relative">
         <Hero/>
