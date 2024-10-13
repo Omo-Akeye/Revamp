@@ -56,7 +56,7 @@ export default function GoodBye() {
         Bime
         </h1>
         <div className="flex gap-x-2 items-center">
-          <img src="/images/indicator.png" alt="indicator" className="w-6 h-6" />
+          <img src="/images/bluerounded.png" alt="indicator" className="w-6 h-6" />
           <h2 className="font-medium md:text-xl text-xs">All services are operational</h2>
         </div>
       </footer>
