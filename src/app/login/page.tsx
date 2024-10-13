@@ -4,9 +4,11 @@ import Link from "next/link";
 
 export default function Login() {
   return (
-    <div className=""> 
+    <div className='max-w-[1440px] mx-auto'> 
         <nav  className="flex justify-between mt-[52px] md:w-[90%] w-[80%] mx-auto" >
-        <Link href='/' className='text-2xl font-extrabold text-bime-blue'>Bime</Link>
+        <Link href="/" className="text-3xl font-extrabold text-bime-blue w-[231px]">
+        Bime
+      </Link>
         <div className="flex items-center gap-x-6 max-lg:hidden">
             <p className="text-xs">Don’t have an account?</p>
             <Link href='/signup' className='border-[0.4px] border-bime-blue py-[10px] px-6 rounded-[10px] text-bime-blue'>

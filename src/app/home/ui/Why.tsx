@@ -7,7 +7,7 @@ export default function Why() {
         <div className='flex gap-x-10 w-[90%] mx-auto max-lg:gap-y-8 justify-center max-lg:flex-col max-lg:items-center'>
             <section className="max-w-[596px] w-full flex justify-between flex-col">
             <div className='py-10 bg-[#F7F7F7] px-8  rounded-[20px] mb-5 relative'>
-              <img src="images/idea-3d.png" alt="idea" className="absolute right-[5%] top-[5%]" />
+              <img src="images/idea-3d.png" alt="idea" className="absolute right-[5%] top-[5%]"  />
             <p className='max-md:text-xs text-xl mb-3 font-medium'>Who said data must be messy?</p>
             <p className='md:text-base  text-sm max-md:mt-[6px] '>As your business starts to grow you need a system that can help in accelerating its growth</p>
             </div>

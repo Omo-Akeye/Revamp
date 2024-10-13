@@ -5,16 +5,18 @@ export default function SignUp() {
   return (
     <div className='max-w-[1440px] mx-auto'>
       <nav  className="flex justify-between mt-[52px] w-[90%] mx-auto" >
-        <Link href={'/'} className='text-2xl font-extrabold text-bime-blue'>Bime</Link>
-        <div className="flex items-center gap-x-6 max-sm:hidden">
-            <p className="text-sm">Don’t have an account?</p>
+      <Link href="/" className="text-3xl font-extrabold text-bime-blue w-[231px]">
+        Bime
+      </Link>
+        <div className="flex items-center gap-x-6 max-md:hidden">
+            <p className="text-xs">Have an account? </p>
             <Link href={'/signup'} className='border-[0.4px] border-bime-blue py-[10px] px-6 rounded-[10px] text-bime-blue'>
-                Create account 
+                Log in
             </Link>
         </div>
 
 
-        <div className='lg:hidden cursor-pointer'>
+        <div className='md:hidden cursor-pointer'>
           <img src='/images/Hamburger Menu.svg' alt="hamburger menu" />
         </div>
         </nav>
