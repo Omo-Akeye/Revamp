@@ -36,9 +36,9 @@ export default function Growth() {
             className="max-md:max-w-[234px] mx-[76px]"
           />
           <div className="flex flex-col items-start">
-            <p >{section.description}</p>
+            <p className="max-sm:text-xs">{section.description}</p>
             <div className="flex text-[#329ACF] font-semibold gap-x-[10px] mt-6 justify-center items-center hover:gap-x-4 cursor-pointer transition">
-              <p>{section.linkText}</p>
+              <p >{section.linkText}</p>
               <img src={section.linkImgSrc} alt={section.linkImgAlt} width={18} />
             </div>
           </div>

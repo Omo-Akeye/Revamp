@@ -36,7 +36,7 @@ export default function ImageSlider() {
         <SwiperSlide key={index}>
           <div className="flex flex-col items-center justify-center text-center p-6 w-[80%] mx-auto">
             <h1 className="md:text-5xl text-[28px] font-medium">{slide.title}</h1>
-            <p className="mb-8 mt-4 md:text-base">
+            <p className="mb-8 mt-4 max-sm:text-xs">
               {slide.description}
             </p>
             <Button
