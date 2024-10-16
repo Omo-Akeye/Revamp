@@ -13,7 +13,7 @@ export default function Nav() {
 
   return (
     <nav className="flex justify-between md:mt-[52px] mt-9 w-[90%] mx-auto items-center">
-      <Link href="/" className="text-3xl font-extrabold text-bime-blue w-[231px]">
+      <Link href="/" className="text-2xl font-extrabold text-bime-blue w-[231px]">
         Bime
       </Link>
 

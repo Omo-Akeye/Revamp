@@ -34,13 +34,13 @@ export default function GoodBye() {
           <section className="flex max-md:flex-col  justify-center gap-x-8 mt-11 max-md:gap-y-2  mx-auto">
             <span className="flex gap-x-[10px] items-center justify-center">
 
-            <img src="/images/star.jpg" alt="vector" />
+            <img src="/images/star.jpg" alt="vector" className="max-sm:w-5" />
             <p className="md:text-xl font-medium text-xs">4.7 on G2.com</p>
             <img src="/images/footergroup.png" alt="footer" />
             </span>
 
             <span className="flex gap-x-[10px] items-center justify-center">
-            <img src="/images/star.jpg" alt="vector" />
+            <img src="/images/star.jpg" alt="vector" className="max-sm:w-5" />
             <p className="md:text-xl text-xs font-medium">4.7 on Capterra</p>
             <img src="/images/footergroup1.png" alt="footer" />
             </span>

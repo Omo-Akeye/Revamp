@@ -65,7 +65,7 @@ export default function Cards() {
   };
 
   return (
-    <div className='flex max-lg:flex-col lg:justify-center  lg:w-[90%] w-[80%] mx-auto gap-x-10 mt-20 max-lg:gap-y-7 max-lg:items-center'>
+    <div className='flex max-lg:flex-col lg:justify-center w-[90%] mx-auto gap-x-10 mt-20 max-lg:gap-y-7 max-lg:items-center'>
       {cards.map((card, index) => (
         <div
           key={index}
