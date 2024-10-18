@@ -4,9 +4,9 @@ import Link from "next/link";
 
 export default function Login() {
   return (
-    <div className='max-w-[1440px] mx-auto'> 
+    <div className="max-w-[1440px] mx-auto"> 
         <nav  className="flex justify-between mt-[52px] md:w-[90%] w-[80%] mx-auto" >
-        <Link href="/" className="text-3xl font-extrabold text-bime-blue w-[231px]">
+        <Link href="/" className="text-2xl font-extrabold text-bime-blue w-[231px]">
         Bime
       </Link>
         <div className="flex items-center gap-x-6 max-lg:hidden">
@@ -20,9 +20,9 @@ export default function Login() {
           <img src='/images/Hamburger Menu.svg' alt="hamburger menu" />
         </div>
         </nav>
-        <div className="flex items-center justify-center h-[80vh]">
-        <div className="md:w-full w-[80%] mx-auto max-w-lg">
-        <h2 className="mb-10 md:text-2xl text-xl md:text-center text-gray-500 md:w-[50%] w-[60%] md:mx-auto"> <span className="font-semibold text-black">Log in </span>with your details to continue</h2>
+        <div className="flex items-center justify-center max-[340px]:h-full h-[80vh]">
+        <div className="md:w-full w-[80%] mx-auto max-w-lg max-[330px]:mt-7">
+        <h2 className="mb-10 md:text-2xl text-xl md:text-center text-gray-500  md:w-[50%] w-[70%] max-[340px]:w-[80%] md:mx-auto"> <span className="font-semibold text-black">Log in </span>with your details to continue</h2>
         <form >
          
             <input
