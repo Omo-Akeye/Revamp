@@ -58,7 +58,7 @@ export default function Nav() {
 
       
       <section
-        className={`fixed top-0 bg-white shadow-xl w-[50%] h-full right-0 z-40 transform transition-transform duration-300 pt-5 ${
+        className={`fixed top-0 bg-white shadow-xl w-[50%] h-full right-0 z-40 transform transition-transform duration-300 pt-5 lg:hidden ${
           isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -69,20 +69,14 @@ export default function Nav() {
         >
           x
         </span>
-        <div className="flex-col inline-flex my-[50%] mx-[20%] gap-y-6">
-          <Link href="/" className="text-2xl font-extrabold text-bime-blue">
+        <div className="flex-col inline-flex my-[50%] mx-[20%] gap-y-3">
+          <Link href="/" className="text-2xl font-extrabold text-bime-blue text-center">
             Bime
           </Link>
-          <Button
-            label="Log in"
-            href="/login"
-            bgColor="transparent"
-            textColor="#282829"
-            border="0.3px solid #282829"
-            width="auto"
-            height="auto"
-            hoverBgColor="#EAEAEA"
-          />
+       
+           <Link href={'/login'} className="border-[0.3px] text-[#282829] py-2 px-4 rounded-[10px] bime-black text-center text-xs  transition-colors duration-300 text-nowrap">
+             Login
+            </Link>
           <Button
             label="Get started"
             href="/"

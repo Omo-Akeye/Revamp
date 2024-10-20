@@ -25,7 +25,7 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <Link href={href || ''} legacyBehavior>
       <a
-        className={`md:px-[38px] px-[16px] md:py-[14px] py-2 rounded-lg inline-flex items-center transition-colors duration-300 text-nowrap max-sm:text-xs`}
+        className={`md:px-[38px] px-[16px] md:py-[14px] py-2 rounded-lg inline-flex items-center transition-colors duration-300 text-nowrap max-sm:text-xs text-center`}
         style={{
           backgroundColor: bgColor,
           color: textColor,

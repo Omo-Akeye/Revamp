@@ -1,11 +1,20 @@
+"use client"
+
 import Link from 'next/link'
+import { useState } from 'react';
+import Button from '../home/ui/Button';
 
 
 export default function SignUp() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); 
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen((prev) => !prev);
+  };
   return (
     <div className='max-w-[1440px] mx-auto'>
-      <nav  className="flex justify-between mt-[52px] w-[90%] mx-auto" >
-      <Link href="/" className="text-3xl font-extrabold text-bime-blue w-[231px]">
+      <nav  className="flex justify-between md:mt-[52px] mt-9 w-[90%] mx-auto items-center" >
+      <Link href="/" className="text-2xl font-extrabold text-bime-blue w-[231px]">
         Bime
       </Link>
         <div className="flex items-center gap-x-6 max-md:hidden">
@@ -16,9 +25,41 @@ export default function SignUp() {
         </div>
 
 
-        <div className='md:hidden cursor-pointer'>
+        <div className='md:hidden cursor-pointer' onClick={toggleMobileMenu}>
           <img src='/images/Hamburger Menu.svg' alt="hamburger menu" />
         </div>
+        
+        <section
+        className={`fixed top-0 bg-white shadow-xl w-[50%] h-full right-0 z-40 transform transition-transform duration-300 pt-5 lg:hidden ${
+          isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+      
+        <span
+          className="cursor-pointer text-2xl font-semibold pl-4"
+          onClick={toggleMobileMenu}
+        >
+          x
+        </span>
+        <div className="flex-col inline-flex my-[50%] mx-[20%] gap-y-3">
+          <Link href="/" className="text-2xl font-extrabold text-bime-blue text-center">
+            Bime
+          </Link>
+       
+           <Link href={'/login'} className="border-[0.3px] text-[#282829] py-2 px-4 rounded-[10px] bime-black text-center text-xs  transition-colors duration-300 text-nowrap">
+             Login
+            </Link>
+          <Button
+            label="Get started"
+            href="/"
+            bgColor="#329ACF"
+            textColor="white"
+            width="auto"
+            height="auto"
+            hoverBgColor="#38BCFF"
+          />
+        </div>
+      </section>
         </nav>
 
 <div className="grid items-center xl:grid-cols-2 w-[90%] mx-auto max-xl:mt-20">
