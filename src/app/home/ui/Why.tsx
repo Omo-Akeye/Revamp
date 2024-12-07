@@ -36,7 +36,7 @@ export default function Why() {
 
         </div>
 
-        <div className='md:w-[35%] w-[60%] mx-auto text-center md:mt-28 mt-14'>
+        <div className='md:w-[35%] w-[60%] mx-auto text-center md:my-14 my-8'>
          
          <p className='text-[#0E0F0F99] text-opacity-60 uppercase max-md:text-xs text-xl mb-3 font-medium'>Smart Business Plartform </p>
           <p className='md:text-2xl font-semibold text-sm max-md:mt-[6px]'>Switch to the Bime side, where you never have to worry about missing deadlines</p>

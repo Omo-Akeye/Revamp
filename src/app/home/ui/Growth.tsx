@@ -21,11 +21,11 @@ export default function Growth() {
   ];
 
   return (
-    <main className="w-[85%] mx-auto max-lg:flex max-lg:flex-col max-lg:items-center max-w-[1228px]">
+    <main className="w-[85%] mx-auto flex-col flex items-center max-w-[1228px] md:gap-y-12 gap-y-8">
       {sections.map((section, index) => (
         <div
           key={index}
-          className="bg-[#F5F5F5] flex max-lg:flex-col md:px-[71px] items-center rounded-[20px] w-full md:mt-[106px] mt-6 justify-between py-9 px-[27px] max-lg:max-w-[600px] max-[1227px]"
+          className="bg-[#F5F5F5] flex max-lg:flex-col md:px-[71px] items-center rounded-[20px] w-full justify-between py-9 px-[27px] max-lg:max-w-[600px] max-[1227px]"
         >
           <h1 className="md:text-[40px] text-2xl font-semibold lg:leading-[48px]">
             {section.title}

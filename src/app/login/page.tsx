@@ -15,18 +15,17 @@ export default function Login() {
   };
   return (
     <div className="max-w-[1440px] mx-auto"> 
-        <nav  className="flex justify-between md:mt-[52px] mt-9 w-[90%] mx-auto items-center" >
+       <nav  className="flex justify-between md:mt-[52px] mt-9 w-[90%] mx-auto items-center" >
       <Link href="/" className="text-2xl font-extrabold text-bime-blue w-[231px]">
         Bime
       </Link>
-        <div className="flex items-center gap-x-6 max-lg:hidden">
+        <div className="flex items-center gap-x-6 max-md:hidden">
             <p className="text-xs">Don’t have an account?</p>
             <Link href='/signup' className='border-[0.4px] border-bime-blue py-[10px] px-6 rounded-[10px] text-bime-blue'>
                 Create account 
             </Link>
-         
         </div>
-        <div className='lg:hidden cursor-pointer'  onClick={toggleMobileMenu}>
+        <div className='md:hidden cursor-pointer'  onClick={toggleMobileMenu}>
           <img src='/images/Hamburger Menu.svg' alt="hamburger menu" />
         </div>
 
