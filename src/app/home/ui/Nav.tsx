@@ -3,22 +3,25 @@ import Link from "next/link";
 import { useState } from "react";
 import Button from "./Button";
 
-export default function Nav() {
+export default function Nav({
+  onPricingClick,
+  onAboutUsClick,
+}: {
+  onPricingClick: () => void;
+  onAboutUsClick: () => void;
+}) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); 
 
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen((prev) => !prev);
   };
-
+ 
   return (
     <nav className="flex justify-between md:mt-[52px] mt-9 w-[90%] mx-auto items-center">
       <Link href="/" className="text-2xl font-extrabold text-bime-blue w-[231px]">
         Bime
       </Link>
-
- 
-
       <div className="">
         <ul className="flex items-center text-lg text-[#282829] gap-x-7 max-lg:hidden">
           <li className="flex items-center gap-x-[6px] cursor-pointer">
@@ -28,15 +31,15 @@ export default function Nav() {
               30% off
             </span>
           </li>
-          <li className="cursor-pointer">Pricing</li>
-          <li className="cursor-pointer">About us</li>
+          <li className="cursor-pointer" onClick={onPricingClick}>Pricing</li>
+          <li className="cursor-pointer" onClick={onAboutUsClick}>About us</li>
         </ul>
       </div>
 
       <div className="inline-flex gap-x-[120px]">
         <div className="inline-flex items-center text-sm font-semibold gap-[10px] max-lg:hidden">
 
-             <Link href={'/login'} className="border-[0.3px] text-[#282829] py-3 px-7 rounded-[10px] bime-black">
+             <Link href={'/login'} className="border-[0.3px] text-[#282829] py-3 px-7 rounded-[10px] bime-black hover:bg-[#EAEAEA] hover:border-black">
              Login
              </Link>
              <Link href={'/signup'} className="text-white font-semibold bg-[#329ACF] py-3 px-9 rounded-[10px] hover:bg-[#38BCFF]">
