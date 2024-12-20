@@ -35,4 +35,4 @@
 ```
 
 # Live Demo
-Check out the live version of the website: [Micro Agency](https://revamp-xi.vercel.app/)
+Check out the live version of the website: [Bime](https://revamp-xi.vercel.app/)
