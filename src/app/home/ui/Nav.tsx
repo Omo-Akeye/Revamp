@@ -3,16 +3,16 @@ import Link from "next/link";
 import { useState } from "react";
 import Button from "./Button";
 
-export default function Nav({
-  onPricingClick,
-  onAboutUsClick,
-}: {
+interface NavProps {
+  setOpenPop: (value: boolean) => void;
+  openOverPop: boolean;
   onPricingClick: () => void;
   onAboutUsClick: () => void;
-}) {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); 
+}
 
-
+export default function Nav({ setOpenPop, openOverPop, onPricingClick, onAboutUsClick }: NavProps) {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen((prev) => !prev);
   };
@@ -26,7 +26,7 @@ export default function Nav({
         <ul className="flex items-center text-lg text-[#282829] gap-x-7 max-lg:hidden">
           <li className="flex items-center gap-x-[6px] cursor-pointer">
             Discount offer
-            <span className="bg-[#CCEEFF] text-bime-blue px-2 py-1 rounded-md flex text-[10px] font-bold">
+            <span className="bg-[#CCEEFF] text-bime-blue px-2 py-1 rounded-md flex text-[10px] font-bold" onClick={()=>setOpenPop(!openOverPop)}>
               <img src="/images/gift-box-4027302-3328590 2.svg" alt="gift" />
               30% off
             </span>

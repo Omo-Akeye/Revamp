@@ -69,3 +69,13 @@ body {
     padding-right: 40px;
 }
 }
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+.blink-animation {
+  animation: blink 2s infinite ease-in-out;
+}
