@@ -24,9 +24,9 @@ export default function Nav({ setOpenPop, openOverPop, onPricingClick, onAboutUs
       </Link>
       <div className="">
         <ul className="flex items-center text-lg text-[#282829] gap-x-7 max-lg:hidden">
-          <li className="flex items-center gap-x-[6px] cursor-pointer">
+          <li className="flex items-center gap-x-[6px] cursor-pointer" onClick={()=>setOpenPop(!openOverPop)}>
             Discount offer
-            <span className="bg-[#CCEEFF] text-bime-blue px-2 py-1 rounded-md flex text-[10px] font-bold" onClick={()=>setOpenPop(!openOverPop)}>
+            <span className="bg-[#CCEEFF] text-bime-blue px-2 py-1 rounded-md flex text-[10px] font-bold" >
               <img src="/images/gift-box-4027302-3328590 2.svg" alt="gift" />
               30% off
             </span>

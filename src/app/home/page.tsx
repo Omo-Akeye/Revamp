@@ -11,6 +11,7 @@ import Features from "./ui/Features";
 import PricingCards from "./ui/PricingCards";
 import GoodBye from "./ui/GoodBye";
 import Button from "./ui/Button";
+import Link from "next/link";
 
 export default function MainPage() {
   const cardsRef = useRef<HTMLDivElement>(null);
@@ -68,18 +69,11 @@ export default function MainPage() {
              }}>
            
             <div>
-              <h1 className="text-[38px] font-bold tracking-[-6%] leading-[50px]">Exclusive offer 
+              <h1 className="text-[38px] font-bold tracking-[-6%] leading-10">Exclusive offer 
               for you - <span className="text-bime-blue">Save 30% </span></h1>
               <p className="text-sm my-6 text-[#000000]">Automate, organize, and take full charge of your finances at 30% off regular price for the first three months.  Don’t wait, take advantage now!</p>
-              <Button
-              label="Claim your offer now"
-              width="auto"
-              height="auto"
-              bgColor="#329ACF"
-              hoverBgColor="#38BCFF" 
-              textColor="white"
-              href="/signup"        
-          />
+              <Link href="/signup" className="duration-300 text-nowrap bg-[#329ACF] hover:bg-bime-blue text-white text-xs font-semibold px-[14px] py-[12px] rounded-md">Claim your offer now</Link>
+          
             </div>
              <div>
              <img src="/images/pop-image.svg" width={332} alt="popover"/>
