@@ -17,9 +17,6 @@ export default function MainPage() {
   const cardsRef = useRef<HTMLDivElement>(null);
   const businessRef = useRef<HTMLDivElement>(null);
   const [openOverPop,setOpenPop] = useState<boolean>(false)
-  // function TogglePopOver (){
-  //   setOpenPop(!opne)
-  // }
 
   const scrollToCards = () => {
     const offset = 50;
@@ -63,21 +60,21 @@ export default function MainPage() {
             visibility: openOverPop ? 'visible' : 'hidden'
           }}>
           <section
-             className="max-w-[803px] grid grid-cols-2 bg-white px-10 py-16 rounded-2xl items-center gap-5 relative transform transition-transform duration-300 ease-in-out"
+             className="max-w-[803px] grid md:grid-cols-2 bg-white px-10 md:py-16 py-14 rounded-2xl items-center gap-5 relative transform transition-transform duration-300 ease-in-out max-sm:w-[90%] max-md:w-[80%]"
              style={{
                transform: openOverPop ? 'scale(1)' : 'scale(0.95)'
              }}>
            
             <div>
-              <h1 className="text-[38px] font-bold tracking-[-6%] leading-10">Exclusive offer 
+              <h1 className="md:text-[38px] text-3xl font-bold tracking-[-6%] leading-10">Exclusive offer 
               for you - <span className="text-bime-blue">Save 30% </span></h1>
-              <p className="text-sm my-6 text-[#000000]">Automate, organize, and take full charge of your finances at 30% off regular price for the first three months.  Don’t wait, take advantage now!</p>
+              <p className="text-sm my-6 text-[#000000] max-sm:text-xs">Automate, organize, and take full charge of your finances at 30% off regular price for the first three months.  Don’t wait, take advantage now!</p>
               <Link href="/signup" className="duration-300 text-nowrap bg-[#329ACF] hover:bg-bime-blue text-white text-xs font-semibold px-[14px] py-[12px] rounded-md">Claim your offer now</Link>
           
             </div>
              <div>
              <img src="/images/pop-image.svg" width={332} alt="popover"/>
-             <img src="/images/Close Circle.svg" className="absolute top-6 right-6 cursor-pointer" width={16} alt="close"
+             <img src="/images/Close Circle.svg" className="absolute top-6 right-6 cursor-pointer" width={24} alt="close"
              onClick={()=>setOpenPop(!openOverPop)}/>
              </div>
           </section>

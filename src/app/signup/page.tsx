@@ -30,34 +30,30 @@ export default function SignUp() {
         </div>
         
         <section
-        className={`fixed top-0 bg-white shadow-xl w-[50%] h-full right-0 z-40 transform transition-transform duration-300 pt-5 lg:hidden ${
+        className={`fixed top-0 bg-white shadow-xl w-[65%] sm:w-1/2 h-full right-0 z-40 transform transition-transform duration-300 pt-5 lg:hidden pr-7 ${
           isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
       
-        <span
-          className="cursor-pointer text-2xl font-semibold pl-4"
+      <span
+          className="cursor-pointer "
           onClick={toggleMobileMenu}
         >
-          x
+          <img src="/images/Close Circle.svg" width={24} className="ml-[10%]"/>
         </span>
-        <div className="flex-col inline-flex my-[50%] mx-[20%] gap-y-3">
+        <div className="flex-col inline-flex my-[50%]  gap-y-3 items-end w-full mr-7">
           <Link href="/" className="text-2xl font-extrabold text-bime-blue text-center">
             Bime
           </Link>
        
-           <Link href={'/login'} className="border-[0.3px] text-[#282829] py-2 px-4 rounded-[10px] bime-black text-center text-xs  transition-colors duration-300 text-nowrap">
+          <div className="flex-col inline-flex gap-y-3 ">
+       
+           <Link href={'/login'} className="border-[0.3px] text-[#282829] py-2 px-6 rounded-[10px] bime-black text-center   transition-colors duration-300 text-nowrap hover:bg-[#EAEAEA] hover:border-black">
              Login
             </Link>
-          <Button
-            label="Get started"
-            href="/"
-            bgColor="#329ACF"
-            textColor="white"
-            width="auto"
-            height="auto"
-            hoverBgColor="#38BCFF"
-          />
+            <Link  href="/signup" className="bg-[#329ACF] hover:bg-[#38BCFF] text-white transition-colors duration-300 font-semibold px-7 py-[13px] rounded-lg">Get started</Link>
+        
+        </div>
         </div>
       </section>
         </nav>

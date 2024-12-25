@@ -16,7 +16,10 @@ export default function Nav({ setOpenPop, openOverPop, onPricingClick, onAboutUs
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen((prev) => !prev);
   };
- 
+  const handleNavClick = (action: () => void) => {
+    action();
+    toggleMobileMenu();
+  };
   return (
     <nav className="flex justify-between md:mt-[52px] mt-9 w-[90%] mx-auto items-center">
       <Link href="/" className="text-2xl font-extrabold text-bime-blue w-[231px]">
@@ -46,8 +49,6 @@ export default function Nav({ setOpenPop, openOverPop, onPricingClick, onAboutUs
              Get Started
              </Link>
          
-       
-
       </div>
 
       </div>
@@ -59,37 +60,60 @@ export default function Nav({ setOpenPop, openOverPop, onPricingClick, onAboutUs
         <img src="/images/Hamburger Menu.svg" alt="hamburger menu" />
       </div>
 
-      
-      <section
-        className={`fixed top-0 bg-white shadow-xl w-[50%] h-full right-0 z-40 transform transition-transform duration-300 pt-5 lg:hidden ${
+
+<section
+        className={`fixed top-0 bg-white shadow-xl w-[65%] sm:w-1/2 h-full right-0 z-40 transform transition-transform duration-300 pt-5 lg:hidden ${
           isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-      
         <span
-          className="cursor-pointer text-2xl font-semibold pl-4"
+          className="cursor-pointer"
           onClick={toggleMobileMenu}
         >
-          x
+          <img src="/images/Close Circle.svg" width={24} className="ml-[10%]"/>
         </span>
-        <div className="flex-col inline-flex my-[50%] mx-[20%] gap-y-3">
-          <Link href="/" className="text-2xl font-extrabold text-bime-blue text-center">
-            Bime
-          </Link>
-       
-           <Link href={'/login'} className="border-[0.3px] text-[#282829] py-2 px-4 rounded-[10px] bime-black text-center text-xs  transition-colors duration-300 text-nowrap">
-             Login
+        <main className="flex flex-col justify-between h-[60%] mt-28 mr-7">
+          <div className="flex flex-col items-end space-y-7">
+            <span 
+              className="space-y-3 cursor-pointer" 
+              onClick={() => handleNavClick(() => setOpenPop(!openOverPop))}
+            >
+              <p>Discount offer</p>
+              <span className="bg-[#CCEEFF] text-bime-blue px-2 py-1 rounded-md flex font-bold items-center" >
+                <img src="/images/gift-box-4027302-3328590 2.svg" alt="gift" width={18} />
+                30% off
+              </span>
+            </span>
+            <span 
+              onClick={() => handleNavClick(onPricingClick)} 
+              className="cursor-pointer"
+            >
+              Pricing
+            </span>
+            <span 
+              onClick={() => handleNavClick(onAboutUsClick)} 
+              className="cursor-pointer"
+            >
+              About us
+            </span>
+          </div>
+          <div className="flex-col inline-flex gap-y-3 items-end">
+            <Link 
+              href={'/login'} 
+              className="border-[0.3px] text-[#282829] py-2 px-6 rounded-[10px] bime-black text-center transition-colors duration-300 text-nowrap hover:bg-[#EAEAEA] hover:border-black"
+              onClick={toggleMobileMenu}
+            >
+              Login
             </Link>
-          <Button
-            label="Get started"
-            href="/"
-            bgColor="#329ACF"
-            textColor="white"
-            width="auto"
-            height="auto"
-            hoverBgColor="#38BCFF"
-          />
-        </div>
+            <Link  
+              href="/signup" 
+              className="bg-[#329ACF] hover:bg-[#38BCFF] text-white transition-colors duration-300 font-semibold px-7 py-[13px] rounded-lg"
+              onClick={toggleMobileMenu}
+            >
+              Get started
+            </Link>
+          </div>
+        </main>
       </section>
     </nav>
   );
