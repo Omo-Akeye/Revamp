@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef,useState } from "react";
+import { useEffect, useRef,useState } from "react";
 import Nav from "./ui/Nav";
 import Hero from "./ui/Hero";
 import Business from "./ui/Business";
@@ -10,11 +10,12 @@ import Growth from "./ui/Growth";
 import Features from "./ui/Features";
 import PricingCards from "./ui/PricingCards";
 import GoodBye from "./ui/GoodBye";
-import Button from "./ui/Button";
+// import Button from "./ui/Button";
 import Link from "next/link";
 
 export default function MainPage() {
   const cardsRef = useRef<HTMLDivElement>(null);
+  const [showScrollTop, setShowScrollTop] = useState(false);
   const businessRef = useRef<HTMLDivElement>(null);
   const [openOverPop,setOpenPop] = useState<boolean>(false)
 
@@ -48,6 +49,25 @@ export default function MainPage() {
       });
     }
   };
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', 
+    });
+  };
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowScrollTop(true);
+      } else {
+        setShowScrollTop(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <div className="max-w-[1440px] h-screen mx-auto relative">
       <Nav onPricingClick={scrollToCards} onAboutUsClick={scrollToBusiness}   openOverPop={openOverPop} 
@@ -100,7 +120,14 @@ export default function MainPage() {
       <div ref={cardsRef}>
       <PricingCards />
       </div>
-     
+      <img 
+        src="/images/scrolltop.svg" 
+        className={`fixed bottom-8 right-8 w-10 cursor-pointer hover:scale-110 transition-all duration-300 animate-bounce hover:animate-none ${
+          showScrollTop ? 'opacity-100' : 'opacity-0 pointer-events-none'
+        }`}
+        onClick={handleScrollToTop}
+        alt="scroll to top"
+      />
       <GoodBye />
     </div>
   );
