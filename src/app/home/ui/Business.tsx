@@ -1,7 +1,7 @@
 
 export default function Business() {
   return (
-    <div className='relative'>
+    <div className='relative' id="business">
    
       <div className="md:w-[60%] w-[65%] mx-auto text-center md:mt-16 mt-[73px]">
         <div className="w-10 h-[5px] bg-bime-blue rounded-[20px] mx-auto max-md:hidden"></div>
