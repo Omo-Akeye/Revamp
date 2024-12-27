@@ -19,7 +19,7 @@ export default function SignUp() {
       </Link>
         <div className="flex items-center gap-x-6 max-md:hidden">
             <p className="text-xs">Have an account? </p>
-            <Link href={'/signup'} className='border-[0.4px] border-bime-blue py-[10px] px-6 rounded-[10px] text-bime-blue'>
+            <Link href={'/login'} className='border-[0.4px] border-bime-blue py-[10px] px-6 rounded-[10px] text-bime-blue'>
                 Log in
             </Link>
         </div>
@@ -68,7 +68,7 @@ export default function SignUp() {
         <img src='/images/businessman-sitting-on-office-chair-2873063-2384315@0 1.png' alt="" className="relative z-10" />
     </div>
       <div className="w-full max-w-[545px] max-xl:mx-auto max-sm:w-[80%] max-sm:mx-auto">
-        <h2 className="mb-6 text-gray-500 sm:text-[28px] sm:w-[80%] text-xl"><span className="font-semibold text-black">Sign up</span> for free and take your business higher</h2>
+        <h2 className="mb-6 text-gray-500 sm:text-2xl sm:w-[80%] text-xl"><span className="font-semibold text-black">Sign up</span> for free and take your business higher</h2>
         <form className="flex flex-col sm:gap-y-9 gap-y-6">
           
 
